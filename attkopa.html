@@ -1,20 +1,22 @@
 <head>
   <title>Patriks att k&ouml;pa lista</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>  
-<div class="container">
-  <header>
-    <h1>Saker att k&ouml;pa: ({{incompleteCount}})</h1>
+  <header class="top" role="header">
+    <div class="container">
+           <h1>Saker att k&ouml;pa: ({{incompleteCount}})</h1>
 <label class="hide-completed">
   <input type="checkbox" checked="{{hideCompleted}}" />
   G&ouml;m det som &auml;r köpt
 </label>
-  </header>
-    <!-- add a form below the h1 -->
-  <form class="new-task">
-    <input type="text" name="text" placeholder="Skriv det som ska k&ouml;pas h&auml;r!" />
+       <form class="new-task form-horizontal" role="form">
+    <input type="text" class="form-control" id ="text" name="text" placeholder="Skriv det som ska k&ouml;pas h&auml;r!" />
   </form>
+    </div>
+</header>
+<div class="container">
   <ul>
       {{#each tasks}}
         {{> task}}

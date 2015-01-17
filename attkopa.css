@@ -3,21 +3,6 @@ body {
   
 }
 
-.container {
-  
-}
-
-header {
- 
-}
-
-
-h1 {
-
-  display: inline-block;
-
-}
-
 form {
   margin-top: 10px;
   margin-bottom: -10px;
@@ -56,6 +41,4 @@ li.checked .text {
   text-decoration: line-through;
 }
 
-header .hide-completed {
-  float: right;
-}
+
